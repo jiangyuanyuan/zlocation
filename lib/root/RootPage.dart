@@ -57,8 +57,8 @@ class _RootPageState extends State<RootPage> {
 
   List<BottomNavigationBarItem> _createTabarList() {
     List<String> tabTitles = [
-      I18n.of(context).home,
-      I18n.of(context).coinexchange,
+      I18n.of(context).location,
+      I18n.of(context).friends,
       I18n.of(context).team,
       I18n.of(context).mine,
     ];

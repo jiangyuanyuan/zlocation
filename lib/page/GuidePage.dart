@@ -18,17 +18,19 @@ class _GuidePageState extends State<GuidePage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 100)).then((value) => _jumpToRoot(context));
+    Future.delayed(const Duration(milliseconds: 1000)).then((value) => _jumpToRoot(context));
   }
 
 
   void _jumpToRoot(BuildContext context) async {
     final share = await SharedPreferences.getInstance();
-    if(share.getString(AppConst.KEY_user_token) != null) {
-      Navigator.of(context).pushNamedAndRemoveUntil('/root', (route) => false);
-    } else {
-
-    }
+    print("_jumpToRoot");
+    Navigator.of(context).pushNamedAndRemoveUntil('/RootPage', (route) => false);
+    // if(share.getString(AppConst.KEY_user_token) != null) {
+    //   Navigator.of(context).pushNamedAndRemoveUntil('/root', (route) => false);
+    // } else {
+    //
+    // }
   }
 
   @override
@@ -39,7 +41,7 @@ class _GuidePageState extends State<GuidePage> {
     return Scaffold(
       backgroundColor: AppColor.back998,
       body: Center(
-        child: Text("欢迎页面"),
+        child: Image.asset("assets/启动图.png",),
       ),
       // body: Container(
       //   decoration: BoxDecoration(

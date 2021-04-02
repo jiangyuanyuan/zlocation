@@ -44,6 +44,14 @@ class I18n implements WidgetsLocalizations {
   String get lang => "切换语言";
   /// "首页"
   String get home => "首页";
+  /// "位置"
+  String get location => "位置";
+
+  /// "好友"
+  String get friends => "好友";
+
+  /// "安全"
+  String get security => "安全";
   /// "兑换"
   String get exchange => "兑换";
   /// "市场"

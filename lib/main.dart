@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       onGenerateRoute: onGenerateRoute,
-      home: RootPage(),
+      home: GuidePage(),
       localizationsDelegates: const [
         I18n.delegate,
         GlobalMaterialLocalizations.delegate,
