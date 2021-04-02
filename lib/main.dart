@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zlocation/page/GuidePage.dart';
 import 'package:zlocation/provider/user.dart';
+import 'package:zlocation/root/RootPage.dart';
 import 'package:zlocation/router.dart';
 
 import 'common/const/cosnt.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       onGenerateRoute: onGenerateRoute,
-      home: GuidePage(),
+      home: RootPage(),
       localizationsDelegates: const [
         I18n.delegate,
         GlobalMaterialLocalizations.delegate,
