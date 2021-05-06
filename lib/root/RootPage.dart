@@ -23,8 +23,8 @@ class _RootPageState extends State<RootPage> {
 
   List<Widget> pages = <Widget>[
     LocationPage(),
-    SecurityPage(),
     FriendsPage(),
+    SecurityPage(),
     MyPage()
   ];
 

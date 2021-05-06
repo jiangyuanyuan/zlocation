@@ -44,10 +44,15 @@ class AppColor {
   static const Color fontgrey = Color(0xffa5a5a5);
   static const Color font666 = Color(0xff666666);
   static const Color font333 = Color(0xff333333);
+  static const Color fontred = Color(0xffE8286E);
 
   /// f3f3f3
   static const Color divigrey = Color(0xfff3f3f3);
   static const Color back998 = Color(0xff4C7998);
+
+  static const Color bg = Color(0xffF8F9FD);
+  static const Color bgsk = Color(0xffF1F2F6);
+  static const Color line = Color(0xffE5E5E5);
 
   
 }
