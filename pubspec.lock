@@ -378,13 +378,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.6.8"
-  image_pickers:
-    dependency: "direct main"
-    description:
-      name: image_pickers
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "1.0.8+7"
   install_plugin:
     dependency: "direct main"
     description:

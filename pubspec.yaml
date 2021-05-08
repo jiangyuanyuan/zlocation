@@ -43,7 +43,7 @@ dependencies:
   permission_handler: ^5.0.1+1
   k_chart: ^0.1.1
   bubble_tab_indicator: "^0.1.4"
-  image_pickers: ^1.0.7+6
+#  image_pickers: ^1.0.7+6
   path_provider: ^1.2.0
   flutter_easyloading: ^1.1.4
   qr_flutter: ^3.1.0
