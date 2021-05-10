@@ -30,31 +30,40 @@ class _VipCellState extends State<VipCell> {
       ),
 
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          Stack(
+            // fit: StackFit.expand,
             children: [
-              Padding(
-                  padding: EdgeInsets.only(left: 20,top: 15),
-              child: Text("尊享超级VIP",style: AppFont.textStyle(16, color: AppColor.font5C3F2E, fontWeight: FontWeight.bold),),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 50,
+                padding: EdgeInsets.only(left: 20,top: 15),
+                child: Text("尊享超级VIP",style: AppFont.textStyle(16, color: AppColor.font5C3F2E, fontWeight: FontWeight.bold),),
+
               ),
-              InkWell(
-                child: Container(
-                  decoration: new BoxDecoration(
-                    color: AppColor.font3D3732,
-                    border: new Border.all(width: 2.0, color: AppColor.font3D3732),
-                    borderRadius: new BorderRadius.all(new Radius.circular(20.0)),
-                  ),
-                  alignment: Alignment.center,
-                  padding:
-                  EdgeInsets.only(left: 17, right: 17, bottom: 5, top: 5),
-                  child: Text("立即开通",style: AppFont.textStyle(16, color: AppColor.fontE9D1BB, fontWeight: FontWeight.bold),),
+              Positioned(
+                right: 20,
+                top: 15,
+                child:InkWell(
+
+                    child: Container(
+                      width: 90,
+                      decoration: new BoxDecoration(
+                        color: AppColor.font3D3732,
+                        border: new Border.all(width: 2.0, color: AppColor.font3D3732),
+                        borderRadius: new BorderRadius.all(new Radius.circular(20.0)),
+                      ),
+                      alignment: Alignment.center,
+                      padding:EdgeInsets.only(left: 15, right: 15, bottom: 5, top: 5),
+                      child: Text("立即开通",style: AppFont.textStyle(14, color: AppColor.fontE9D1BB, fontWeight: FontWeight.bold),),
+                    ),
+                    onTap: () {
+
+                    }
                 ),
-                onTap: () {
 
-                },
-              )
-
-
+              ),
             ],
           ),
 

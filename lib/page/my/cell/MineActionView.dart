@@ -25,7 +25,7 @@ class MineActionView extends StatelessWidget {
     ];
     return Container(
       padding: const EdgeInsets.all(20.0),
-      margin: const EdgeInsets.only(top: 20),
+      margin: const EdgeInsets.only(top: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: titles.map((e) => InkWell(
